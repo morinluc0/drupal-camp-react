@@ -31,11 +31,12 @@ const ArticlesView = () => (
                   }
                 }
               }
-              placeholderComment{
-                commentName
-                commentEmail
-                commentBody
-                id
+              placeholderComment {
+                ...on JsonComment {
+                  commentBody
+                  commentEmail
+                  commentName
+                }
               }
             }
           }
