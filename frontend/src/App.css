@@ -30,3 +30,24 @@
 .App-body {
   text-align: left;
 }
+
+.App-body>ul>li:nth-child(even) {
+  background: #CCC;
+  list-style-type: none;
+}
+
+.App-body>ul>li:nth-child(odd) {
+  list-style-type: none;
+}
+
+
+.col-1 {
+  display: inline-block;
+  width: 50%;
+  vertical-align:top
+}
+
+.col-2 {
+  display: inline-block;
+  width: 50%;
+}
